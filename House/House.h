@@ -10,8 +10,8 @@
 
 @interface House : NSObject
 
-@property (nonatomic) NSString *address;
-@property (nonatomic) int numberOfBedrooms;
+@property (nonatomic, copy) NSString *address;
+@property (nonatomic, readonly) int numberOfBedrooms;
 @property (nonatomic) BOOL hasHotTub;
 
 @end
